@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.progress {
+  border: 2px solid black;
+  width: 40rem;
+  border-radius: 2rem;
+  height: 1.6rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress p {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  line-height: 1.6rem;
+}
+.progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.6rem;
+  background-color: rgb(65, 232, 65);
+  z-index: -1;
+}
