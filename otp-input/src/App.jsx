@@ -1,11 +1,13 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './App.css'
 
 function App() {
     const NUMB_OF_INPUTS=5;
     const [inputState,setInputState]=useState([...new Array(NUMB_OF_INPUTS).fill("")]);
     const inputRef=useRef([]);
-
+    useEffect(()=>{
+      inputRef.current[0]?.focus()
+    },[])
     const handleChange=(value,index)=>{
       // update value of state on change
       if(isNaN(value)) return;
