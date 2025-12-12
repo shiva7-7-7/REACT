@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  width: 600px;
+  background-color: aliceblue;
+  padding: 5px;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.checkBox-cont {
+  width: 100%;
+  text-align: start;
+}
+.checkboxes {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: large;
+  gap: 5px;
+}
+
+.checkboxes input {
+  height: 15px;
+  width: 15px;
+}
