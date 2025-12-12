@@ -1,16 +1,14 @@
 export function checkRecursive(node, checkedValue) {
-    // 1. Create a clone of the current node
+    //  Create a clone of the current node
     let newNode = { ...node, isChecked: checkedValue };
-    // 2. Recursively update children and clone the children array
     if (newNode?.children.length > 0) {
         const newChildren = newNode.children.map((child) => {
             // Recursive call returns the cloned child
             return checkRecursive(child, checkedValue);
         });
-        // 3. Update the cloned node's children array with the new cloned children
         newNode.children = newChildren;
     }
-    // 4. Return the fully cloned and updated node
+    // Return the fully cloned and updated node
     return newNode;
 }
 
