@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  max-width: 60%;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid black;
+}
+
+input {
+  width: 200px;
+  height: 25px;
+  text-align: center;
+  background-color: rgb(185, 188, 188);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 5px 5px blur;
+}
+input:focus {
+  border: none;
+}
+
+.tickets {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.tickets div {
+  background-color: rgb(35, 225, 98);
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 20px;
+  gap: 5px;
+}
+
+.tickets div button {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
